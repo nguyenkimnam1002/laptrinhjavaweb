@@ -11,22 +11,22 @@ import com.laptrinhjavaweb.service.HomeService;
 @Controller
 public class HomeController {
 
-	@Autowired
-	private HomeService homeService;
+//	@Autowired
+//	private HomeService homeService;
 	
 	@RequestMapping(value = "/trang-chu", method = RequestMethod.GET)
 	public ModelAndView homePage() {
 		// return request trang chu la home.jsp
 		ModelAndView mav = new ModelAndView("home");
 		// add chuoi menu de xu ly loop menu, xu dung jstl de load menu nay vao jsp
-		mav.addObject("menu", homeService.loadMenu());
+//		mav.addObject("menu", homeService.loadMenu());
 		return mav;
 	}
 	
 	@RequestMapping(value = "/spring-mvc", method = RequestMethod.GET)
 	public ModelAndView springPage() {
 		ModelAndView mav = new ModelAndView("springmvc");
-		mav.addObject("menu", homeService.loadMenu());
+//		mav.addObject("menu", homeService.loadMenu());
 		return mav;
 	}
 }

@@ -1,3 +1,14 @@
 1. bind trả data từ controller -> view (model): data sẽ đẩy từ controller sang view thông qua jstl.
 
 2. sử dụng jstl để loop menu ngoài view tức là thư viện jstl của jsp hỗ trợ loop 1 vòng lặp các menu vào 1 variable, sau đó trong jsp ta chỉ cần call tới file menu
+
+3. Su dung mesh decorator de phan chia giao dien admin/home
+cơ chế: header & foooter: cố định
+-> chỉ thay đổi body.
+-> tạo 1 master layout
+
+4. tao 1 file fillter de nhan request chon giao dien (decorator.jsp)
+add lib decorator de co the su dung.
+
+----> quan trong: cac admin/web trong view la cac file con ke thua decorator lop cha o ngoai
+5. the <dec:body/> thu vien decorator cho phep file admin con co the thay doi body tuy chinh

@@ -34,7 +34,6 @@
 
 	</bean>
 	
-	<mvc:interceptors>
-        <bean class="com.laptrinhjavaweb.interceptor.MenuHandlerInterceptor"></bean>
-    </mvc:interceptors>
+	<mvc:resources mapping="/template/**" location="/template/" />
+	
 </beans>
